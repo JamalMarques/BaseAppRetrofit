@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
@@ -16,12 +17,20 @@ import com.basesoft.baseappretro.Common.Constants;
 import com.basesoft.baseappretro.Fragments.FragmentNavDrawer;
 import com.basesoft.baseappretro.Helpers.DialogHelper;
 import com.basesoft.baseappretro.Helpers.Utilities;
+import com.basesoft.baseappretro.Models.APIModels.Responses.MoviesResponse;
 import com.basesoft.baseappretro.Models.NavDrawerItemAbs;
 import com.basesoft.baseappretro.Models.NavItemCategory;
 import com.basesoft.baseappretro.Models.NavItemNormal;
 import com.basesoft.baseappretro.R;
+import com.basesoft.baseappretro.RestAPI.APIClient;
+import com.basesoft.baseappretro.RestAPI.APIConstants;
+import com.basesoft.baseappretro.RestAPI.APIInterface;
 
 import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class NavDrawerActivity extends BaseActivity implements FragmentNavDrawer.FragmentDrawerListener {
 
@@ -59,7 +68,23 @@ public class NavDrawerActivity extends BaseActivity implements FragmentNavDrawer
             }
         });
 
-        DialogHelper.showCommonErrorDialog(this,"Example of an error message",false,null);
+        //DialogHelper.showCommonErrorDialog(this,"Example of an error message",false,null);
+    }
+
+    private void doStuffs(){
+        APIInterface apiInterface = APIClient.getRetrofitClient().create(APIInterface.class);
+        Call<MoviesResponse> call = apiInterface.getTopRatedMovies(APIConstants.API_KEY);
+        call.enqueue(new Callback<MoviesResponse>() {
+            @Override
+            public void onResponse(Call<MoviesResponse> call, Response<MoviesResponse> response) {
+                Log.d("HELLO", "Number of movies received: " + response.body().getResults().size());
+            }
+
+            @Override
+            public void onFailure(Call<MoviesResponse> call, Throwable t) {
+                Log.e("HELLOERROR", t.toString());
+            }
+        });
     }
 
     @Override
@@ -113,11 +138,10 @@ public class NavDrawerActivity extends BaseActivity implements FragmentNavDrawer
     protected void selectItem(int id){
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         itemSelectedID = id;
-        String link;
-        Intent intent;
         switch (id) {
             case Constants.ID_MENU_ITEM1:
                 //Do stuffs
+                doStuffs(); //TODO delete it!
                 break;
             case Constants.ID_MENU_ITEM2:
                 //Do stuffs
