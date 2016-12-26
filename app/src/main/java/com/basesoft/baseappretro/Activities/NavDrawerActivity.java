@@ -80,7 +80,6 @@ public class NavDrawerActivity extends BaseActivity implements FragmentNavDrawer
 
     private ArrayList<NavDrawerItemAbs> getNavDrawerConfig(){
 
-        int itemsMenu;
         ArrayList<NavDrawerItemAbs> items = new ArrayList<>();
 
         items.add(new NavItemNormal(getString(R.string.item_drawer_1), R.drawable.ic_list_home, Constants.ID_MENU_ITEM1));
