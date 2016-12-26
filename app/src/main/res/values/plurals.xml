@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <plurals name="notifications">
+        <item quantity="zero">No notifications</item>
+        <item quantity="one">%d Notification</item>
+        <item quantity="other">%d Notifications</item>
+    </plurals>
+
+</resources>

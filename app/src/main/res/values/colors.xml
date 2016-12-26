@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="primaryTextColorTitle">@color/white</color>
+
+    <color name="pure_white">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="gray1_H">#484641</color>
+    <color name="gray2_H">#484641</color>
+    <color name="gray3_H">#676767</color>
+    <color name="gray4_H">#D5D5D2</color>
+    <color name="gray5_H">#EAEAEA</color>
+    <color name="gray6_H">#EEEEEE</color>
+    <color name="gray7_H">#D5D5D5</color>
+    <color name="gray8_H">#AAAAAA</color>
+    <color name="gray9_H">#999999</color>
+
+
+</resources>

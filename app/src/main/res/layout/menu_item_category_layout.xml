@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_tiny_1dp"
+        android:background="@color/gray4_H"
+        android:layout_marginTop="@dimen/spacing_content_areas" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/subtitles_and_items_height"
+        android:gravity="left|center"
+        android:paddingRight="@dimen/margin_right_drawer">
+
+        <com.basesoft.baseappretro.CustomViews.TextViewBase
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_label"
+            android:text="Subitem"
+            style="@style/common_text_style"
+            android:textColor="@color/gray9_H"
+            android:layout_marginLeft="@dimen/margin_left_drawer"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>

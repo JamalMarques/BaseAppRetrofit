@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/height_header_drawer"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="@dimen/padding_all_drawer"
+    android:paddingRight="@dimen/padding_all_drawer"
+    android:paddingTop="@dimen/height_status_bar"
+    android:id="@+id/main_header">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center|left">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center">
+
+            <com.basesoft.baseappretro.CustomViews.TextViewBase
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_user_name"
+                android:textColor="@color/pure_white"
+                android:text="Yamil Marques"/>
+
+            <com.basesoft.baseappretro.CustomViews.TextViewBase
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_aditional"
+                android:textColor="@color/pure_white"
+                android:text="Some text here"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_img_edit"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_drawer_button"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:layout_width="@dimen/height_width_edit_button"
+                android:layout_height="@dimen/height_width_edit_button"
+                android:id="@+id/img_edit"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textViewStyle">@style/common_text_style</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Customize theme here -->
+    </style>
+
+    <style name="MyCustomToolBarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/primaryTextColorTitle</item>
+        <item name="android:textColorSecondary">@color/primaryTextColorTitle</item>
+    </style>
+
+    <style name="DialogStyle.Base" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/gray2_H</item>
+        <item name="android:textColorPrimary">@color/gray9_H</item>
+        <item name="android:minWidth">@dimen/min_width_base_dialog</item>
+    </style>
+
+    <style name="DialogStyle" parent="DialogStyle.Base">
+        <!-- Add more if is necessary ( < v21)-->
+    </style>
+
+
+    <!-- ======== Text Styles - START ======== -->
+    <style name="BaseTextStyle">
+        <item name="android:textColor">@color/gray3_H</item>
+    </style>
+
+    <style name="text_base_12" parent="BaseTextStyle">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="text_base_14" parent="BaseTextStyle">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+    <style name="text_base_16" parent="BaseTextStyle">
+        <item name="android:textSize">@dimen/text_size_big</item>
+    </style>
+    <style name="text_base_18" parent="BaseTextStyle">
+        <item name="android:textSize">@dimen/text_size_huge</item>
+    </style>
+
+    <style name="text_base_title" parent="BaseTextStyle">
+        <item name="android:textSize">@dimen/text_size_title</item>
+    </style>
+
+    <style name="common_text_style" parent="text_base_14">
+        <!-- add stuffs here if needed-->
+    </style>
+
+    <!-- ======== Text Styles - END ======== -->
+
+
+</resources>

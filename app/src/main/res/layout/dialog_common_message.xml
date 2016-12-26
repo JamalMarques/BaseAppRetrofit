@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/spacing_large"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/spacing_larger"
+        android:paddingRight="@dimen/spacing_larger">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_height="@dimen/dialog_icon_height_width"
+            android:layout_width="@dimen/dialog_icon_height_width"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:visibility="gone" />
+
+        <com.basesoft.baseappretro.CustomViews.TextViewBase
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon"
+            android:text="Fake message" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="right">
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:gravity="right|top"
+        android:orientation="horizontal"
+        android:id="@+id/buttonLayer">
+
+        <ImageButton
+            android:id="@+id/scanButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:src="@drawable/ic_list_home"
+            android:padding="@dimen/custom_notification_padding"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/cartButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:src="@drawable/ic_local_cafe_black_24dp"
+            android:padding="@dimen/custom_notification_padding"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/notificationLayer">
+
+        <LinearLayout
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:gravity="bottom|right"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/custom_notification_padding"
+            android:paddingBottom="@dimen/spacing_small">
+
+            <LinearLayout
+                android:id="@+id/notificationsLayout"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/notification_background"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.basesoft.baseappretro.CustomViews.TextViewBase
+                    android:id="@+id/notificationsTextNumber"
+                    style="@style/common_text_style"
+                    android:layout_width="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:gravity="bottom|right"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/custom_notification_padding"
+            android:paddingBottom="@dimen/spacing_small">
+
+            <LinearLayout
+                android:id="@+id/cartContentsLayout"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/notification_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.basesoft.baseappretro.CustomViews.TextViewBase
+                    android:id="@+id/cartContentsTextNumber"
+                    style="@style/common_text_style"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

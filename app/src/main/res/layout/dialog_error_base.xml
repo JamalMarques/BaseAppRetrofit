@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/spacing_large"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/spacing_large"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/spacing_large"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/modal_icon_alert_iv"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/modal_icon_alert"
+            android:visibility="visible" />
+
+        <com.basesoft.baseappretro.CustomViews.TextViewBase
+            android:id="@+id/dialog_error_message"
+            style="@style/common_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/spacing_large"
+            android:text="Error text" />
+
+    </LinearLayout>
+
+</LinearLayout>

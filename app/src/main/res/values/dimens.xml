@@ -1,0 +1,57 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- ======== Toolbar dimens ======== -->
+    <dimen name="toolbar_default_elevation">4dp</dimen>
+    <dimen name="custom_notification_padding">3dp</dimen>
+
+
+    <!-- ======== Text dimens ======== -->
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_big">16sp</dimen>
+    <dimen name="text_size_huge">18sp</dimen>
+    <dimen name="text_size_title">20sp</dimen>
+
+    <!-- ======== Spacing dimens ======== -->
+    <dimen name="spacing_tiny_1dp">1dp</dimen>
+    <dimen name="spacing_tiny">2dp</dimen>
+    <dimen name="spacing_tiny_3dp">3dp</dimen>
+    <dimen name="spacing_small">5dp</dimen>
+    <dimen name="spacing_small_2">8dp</dimen>
+    <dimen name="spacing_normal">10dp</dimen>
+    <dimen name="spacing_medium">15dp</dimen>
+    <dimen name="spacing_medium_2">17dp</dimen>
+    <dimen name="spacing_large">20dp</dimen>
+    <dimen name="spacing_large_2">22dp</dimen>
+    <dimen name="spacing_larger">25dp</dimen>
+    <dimen name="spacing_extra_large">30dp</dimen>
+    <dimen name="spacing_huge">35dp</dimen>
+    <dimen name="spacing_huge_2">40dp</dimen>
+    <dimen name="spacing_ginormous">50dp</dimen>
+    <dimen name="spacing_extra_ginormous">55dp</dimen>
+
+    <!-- ======== Navigation Drawer dimens  ======== -->
+    <dimen name="height_width_edit_button">20dp</dimen>
+    <dimen name="margin_drawer_button">8dp</dimen>
+    <dimen name="padding_all_drawer">16dp</dimen>
+    <dimen name="height_status_bar">24dp</dimen>
+    <dimen name="height_header_drawer">94dp</dimen>
+    <dimen name="nav_drawer_width">300dp</dimen>
+    <dimen name="subtitles_and_items_height">48dp</dimen>
+    <dimen name="margin_right_drawer">16dp</dimen>
+    <dimen name="spacing_content_areas">8dp</dimen>
+    <dimen name="margin_left_drawer">16dp</dimen>
+    <dimen name="icon_item_size">24dp</dimen>
+    <dimen name="margin_left_labels">32dp</dimen>
+    <dimen name="icon_notification_drawer_size">20dp</dimen>
+
+    <!-- ======== Dialog ======== -->
+    <dimen name="min_width_base_dialog">150dp</dimen>
+    <dimen name="dialog_icon_height_width">40dp</dimen>
+
+
+</resources>
