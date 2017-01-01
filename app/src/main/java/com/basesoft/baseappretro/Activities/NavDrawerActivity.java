@@ -69,6 +69,7 @@ public class NavDrawerActivity extends BaseActivity implements FragmentNavDrawer
         });
 
         doStuffs();
+        
     }
 
     private void doStuffs(){
