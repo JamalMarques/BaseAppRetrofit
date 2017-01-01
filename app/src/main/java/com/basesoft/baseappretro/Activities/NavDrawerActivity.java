@@ -68,7 +68,7 @@ public class NavDrawerActivity extends BaseActivity implements FragmentNavDrawer
             }
         });
 
-        //DialogHelper.showCommonErrorDialog(this,"Example of an error message",false,null);
+        doStuffs();
     }
 
     private void doStuffs(){
