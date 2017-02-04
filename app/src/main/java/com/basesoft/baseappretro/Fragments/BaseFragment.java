@@ -1,11 +1,41 @@
 package com.basesoft.baseappretro.Fragments;
 
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.basesoft.baseappretro.Activities.BaseActivity;
 
 /**
  * Created by yamil.marques on 1/18/16.
  */
-public class BaseFragment extends Fragment{
+public abstract class BaseFragment extends Fragment{
+
+    protected String getTitle(){
+        return "";
+    }
+    protected String getSubTitle(){
+        return "";
+    }
+
+    protected BaseActivity getBaseActivity(){
+        return (BaseActivity)getActivity();
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        loadTitle();
+        return super.onCreateView(inflater, container, savedInstanceState);
+    }
+
+    private void loadTitle(){
+        if(!getTitle().equals("")){ getBaseActivity().setActionBarTitle(getTitle());}
+        if(!getSubTitle().equals("")){ getBaseActivity().setActionBarSubtitle(getSubTitle());}
+    }
 
     /*
     public LinearLayout cartContentsLayout;

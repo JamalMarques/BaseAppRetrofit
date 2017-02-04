@@ -22,6 +22,7 @@ public class BaseActivity extends AppCompatActivity {
     private CoordinatorLayout coordinatorLayout;
     protected Toolbar toolBar;
     protected CharSequence mTitle;
+    protected CharSequence mSubtitle;
 
     public Toolbar getToolBar(){
         return toolBar;
@@ -37,16 +38,20 @@ public class BaseActivity extends AppCompatActivity {
         mTitle = title;
         getSupportActionBar().setTitle(title);
     }
+    public void setActionBarSubtitle(String subtitle){
+        mSubtitle = subtitle;
+        getSupportActionBar().setSubtitle(subtitle);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         /*MenuInflater inflater = this.getMenuInflater();
         inflater.inflate(R.menu.base_menu, menu);*/
-        addTitleStyle();
+        addTitleTypeface();
         return super.onCreateOptionsMenu(menu);
     }
 
-    private void addTitleStyle(){ //call it onCreateOptionsMenu
+    private void addTitleTypeface(){
         try {
             Field f = toolBar.getClass().getDeclaredField("mTitleTextView");
             f.setAccessible(true);

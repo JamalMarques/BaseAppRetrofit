@@ -5,7 +5,7 @@
 
 
     <!-- ========== Font Names ========= -->
-    <string name="Selected_typeface">@string/Roboto_Medium</string>
+    <string name="Selected_typeface">@string/Roboto_Regular</string>
 
     <string name="Roboto_Black">fonts/Roboto-Black.ttf</string>
     <string name="Roboto_BlackItalic">fonts/Roboto-BlackItalic.ttf</string>
