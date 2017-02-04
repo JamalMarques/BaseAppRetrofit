@@ -17,18 +17,11 @@
             android:id="@+id/toolbar"
             layout="@layout/app_bar" />
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/content_frame">
-            </FrameLayout>
-
-        </LinearLayout>
+            android:id="@+id/content_frame">
+        </FrameLayout>
 
     </LinearLayout>
 

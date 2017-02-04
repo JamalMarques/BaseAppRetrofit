@@ -56,7 +56,7 @@ public class BaseActivity extends AppCompatActivity {
             Field f = toolBar.getClass().getDeclaredField("mTitleTextView");
             f.setAccessible(true);
             TextView titleTextView = (TextView) f.get(toolBar);
-            Typeface font = Typeface.createFromAsset(this.getAssets(), this.getString(R.string.Selected_typeface));
+            Typeface font = Typeface.createFromAsset(this.getAssets(), this.getString(R.string.base_typeface));
             titleTextView.setTypeface(font);
         } catch (Exception e){
             e.printStackTrace();

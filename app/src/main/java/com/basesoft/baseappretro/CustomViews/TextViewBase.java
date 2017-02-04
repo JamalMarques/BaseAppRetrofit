@@ -27,7 +27,9 @@ public class TextViewBase extends TextView {
     }
 
     private void init(Context context){
-        Typeface typeface = Typeface.createFromAsset(context.getAssets(), context.getString(R.string.Selected_typeface));
-        setTypeface(typeface);
+        Typeface normalTypeface = Typeface.createFromAsset(context.getAssets(), context.getString(R.string.base_typeface));
+        Typeface boldTypeface = Typeface.createFromAsset(context.getAssets(), context.getString(R.string.base_bold_typeface));
+        setTypeface(normalTypeface,Typeface.NORMAL);
+        setTypeface(boldTypeface,Typeface.BOLD);
     }
 }
